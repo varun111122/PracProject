@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity(), OnScrollChangedCallback {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        println("commit new")
         txt = findViewById(R.id.webview)
         txt?.onScrollChangedCallback = this
         txt?.getSettings()?.setJavaScriptEnabled(true); // enable javascript
