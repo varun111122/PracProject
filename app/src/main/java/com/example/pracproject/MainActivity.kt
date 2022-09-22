@@ -27,6 +27,9 @@ class MainActivity : AppCompatActivity(), OnScrollChangedCallback {
         txt?.getSettings()?.setJavaScriptEnabled(true); // enable javascript
 
 
+        vsvskjbvs svksjbvsjk
+                vsnlsv
+
         txt?.webViewClient = object : WebViewClient() {
             override fun onReceivedError(
                 view: WebView,
