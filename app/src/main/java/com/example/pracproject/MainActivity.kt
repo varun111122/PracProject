@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity(), OnScrollChangedCallback {
         println("commit new")
         println("stash first")
         println("stash second")
+        println("second branch second")
         txt = findViewById(R.id.webview)
         txt?.onScrollChangedCallback = this
         txt?.getSettings()?.setJavaScriptEnabled(true); // enable javascript
