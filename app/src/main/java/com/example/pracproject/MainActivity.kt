@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity(), OnScrollChangedCallback {
         println("second branch second")
         txt = findViewById(R.id.webview)
         txt?.onScrollChangedCallback = this
+
         txt?.getSettings()?.setJavaScriptEnabled(true); // enable javascript
 
 
