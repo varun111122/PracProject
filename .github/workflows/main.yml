@@ -15,10 +15,19 @@ jobs:
       - name: Checkout the code
         uses: actions/checkout@v2
         
-#Single line commnad
-      - name: Run single-line script
-        run: echo hello world!
+      - name:  Run lint
+        run : ./gradlew lintDebug
+       
+      - name: Upload html test report
+        uses: actions/upload-artifact@v2
+        with:
+          name: lint.html
+          path: app/build/reports/lint-results-debug.html
+       
+
         
+
+    
 
       
      
